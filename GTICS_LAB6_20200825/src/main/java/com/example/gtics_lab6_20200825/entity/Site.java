@@ -22,12 +22,12 @@ public class Site {
     @Column(name = "SiteName")
     private String siteName;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "LocationID")
     private Location locationID;
 
     @Column(name = "InstallationDate")
-    private Date installationDate;
+    private String installationDate;
 
     @Column(name = "Latitude", length = 45)
     private String latitude;
